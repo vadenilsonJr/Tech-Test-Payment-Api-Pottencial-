@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WorkSpace\\tech-test-payment-api\\tech-test-payment-api.csproj": {}
+    "D:\\Bootcamp\\tech-test-payment-api\\tech-test-payment-api.csproj": {}
   },
   "projects": {
-    "D:\\WorkSpace\\tech-test-payment-api\\tech-test-payment-api.csproj": {
+    "D:\\Bootcamp\\tech-test-payment-api\\tech-test-payment-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorkSpace\\tech-test-payment-api\\tech-test-payment-api.csproj",
+        "projectUniqueName": "D:\\Bootcamp\\tech-test-payment-api\\tech-test-payment-api.csproj",
         "projectName": "tech-test-payment-api",
-        "projectPath": "D:\\WorkSpace\\tech-test-payment-api\\tech-test-payment-api.csproj",
+        "projectPath": "D:\\Bootcamp\\tech-test-payment-api\\tech-test-payment-api.csproj",
         "packagesPath": "C:\\Users\\vaden\\.nuget\\packages\\",
-        "outputPath": "D:\\WorkSpace\\tech-test-payment-api\\obj\\",
+        "outputPath": "D:\\Bootcamp\\tech-test-payment-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vaden\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
