@@ -14,7 +14,7 @@ namespace tech_test_payment_api.Src.Context
             
         }
 
-        public DbSet<Vendas> Tarefas { get; set; }
+        public DbSet<Vendas> Vendas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
