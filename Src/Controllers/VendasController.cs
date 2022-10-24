@@ -24,20 +24,20 @@ namespace tech_test_payment_api.Src.Controllers
         [HttpGet("{id}")]
         public IActionResult ObterPorId(int id)
         {
-           var tarefa = _context.Vendas.Find(id);
+           var Vendas = _context.Vendas.Find(id);
             
-            if (tarefa == null)
+            if (Vendas == null)
             return NotFound();
 
             
-            return Ok(tarefa);
+            return Ok(Vendas);
         }
 
         [HttpGet("ObterTodos")]
         public IActionResult ObterTodos()
         {
-            var tarefa = _context.Vendas.ToList();
-            return Ok(tarefa);
+            var vendas = _context.Vendas.ToList();
+            return Ok(vendas);
         }
 
         [HttpPost]
@@ -75,12 +75,12 @@ namespace tech_test_payment_api.Src.Controllers
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
-            var tarefaBanco = _context.Vendas.Find(id);
+            var vendasBanco = _context.Vendas.Find(id);
 
-            if (tarefaBanco == null)
+            if (vendasBanco == null)
                 return NotFound();
 
-            _context.Vendas.Remove(tarefaBanco);
+            _context.Vendas.Remove(vendasBanco);
             _context.SaveChanges();
             
             return NoContent();
