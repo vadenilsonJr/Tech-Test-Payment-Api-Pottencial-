@@ -12,7 +12,7 @@ using tech_test_payment_api.Src.Context;
 namespace tech_test_payment_api.Migrations
 {
     [DbContext(typeof(OrganizadorContext))]
-    [Migration("20221024164153_AdicionarTabelaVendas")]
+    [Migration("20221024190447_AdicionarTabelaVendas")]
     partial class AdicionarTabelaVendas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,7 @@ namespace tech_test_payment_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tarefas");
+                    b.ToTable("Vendas");
                 });
 #pragma warning restore 612, 618
         }

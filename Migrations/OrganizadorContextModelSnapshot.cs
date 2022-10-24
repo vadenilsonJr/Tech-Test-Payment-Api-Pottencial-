@@ -44,7 +44,7 @@ namespace tech_test_payment_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tarefas");
+                    b.ToTable("Vendas");
                 });
 #pragma warning restore 612, 618
         }
